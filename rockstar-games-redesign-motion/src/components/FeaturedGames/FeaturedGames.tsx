@@ -30,9 +30,12 @@ const FeaturedGames = ({ gamePoster1, gamePoster2, gamePoster3, gamePoster4 }: F
                     viewport={{ once: true, amount: 0.7 }}
                     transition={{ duration: 1 }}
                     className="flex gap-4">
-                    <button className="bg-[#606060] p-[4px_24px] rounded-[100px] cursor-pointer hover:bg-[#4b4b4b] transition-colors">PC</button>
-                    <button className="bg-[#606060] p-[4px_24px] rounded-[100px] cursor-pointer hover:bg-[#4b4b4b] transition-colors">Console</button>
-                    <button className="bg-[#606060] p-[4px_24px] rounded-[100px] cursor-pointer hover:bg-[#4b4b4b] transition-colors">Dispositivos Portáteis</button>
+
+                    <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="bg-[#606060] p-[4px_24px] rounded-[100px] cursor-pointer hover:bg-[#4b4b4b] transition-colors">PC</motion.button>
+
+                    <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="bg-[#606060] p-[4px_24px] rounded-[100px] cursor-pointer hover:bg-[#4b4b4b] transition-colors">Console</motion.button>
+
+                    <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="bg-[#606060] p-[4px_24px] rounded-[100px] cursor-pointer hover:bg-[#4b4b4b] transition-colors">Dispositivos Portáteis</motion.button>
                 </motion.div>
             </div>
 
