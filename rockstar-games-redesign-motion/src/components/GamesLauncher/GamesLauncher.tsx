@@ -14,7 +14,7 @@ const GamesLauncher = () => {
             style={{ backgroundImage: `url(${bg})` }}
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.4 }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 1 }}
             className="w-[1160px] h-[535px] rounded-2xl mb-[95px] bg-cover bg-center flex items-center place-content-between">
             <div className='w-[342.20px] h-[471px] flex flex-col place-content-around ml-[76px]'>

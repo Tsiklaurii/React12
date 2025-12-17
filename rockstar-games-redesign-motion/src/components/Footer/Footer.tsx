@@ -16,7 +16,11 @@ const Footer = () => {
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 1 }}
                 className='flex items-center gap-10'>
-                <img src={footer_logo} alt="footer_logo" className='cursor-pointer' />
+
+                <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+                    <img src={footer_logo} alt="footer_logo" className='cursor-pointer' />
+                </motion.div>
+
                 <div className='flex flex-col gap-2'>
                     <div className='text-[#B1B1B1] flex gap-6'>
                         <a href="#" className='hover:text-[#5e5e5e] transition-colors'>CONTATO</a>
@@ -51,7 +55,9 @@ const Footer = () => {
                     <img src={youtube} alt="youtube" className='cursor-pointer hover:scale-120 transition-transform duration-300' />
                 </motion.a>
 
-                <a href="#"><img src={fb} alt="fb" className='cursor-pointer hover:scale-120 transition-transform duration-300' /></a>
+                <motion.a href="#" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                    <img src={fb} alt="fb" className='cursor-pointer hover:scale-120 transition-transform duration-300' />
+                </motion.a>
             </motion.div>
         </div >
     )
