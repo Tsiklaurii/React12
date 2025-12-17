@@ -12,10 +12,20 @@ import game_poster_2 from '../../assets/images/game_posters/game_poster_2.svg'
 import game_poster_3 from '../../assets/images/game_posters/game_poster_3.svg'
 import GamesLauncher from "../GamesLauncher/GamesLauncher"
 
+import { motion } from "motion/react"
+
 const LandingPage = () => {
     return (
         <div className="bg-[#101010] font-helvetica justify-items-center">
-            <img src={banner} alt="banner" className="w-full" />
+
+            <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+                viewport={{ once: true, amount: 0.2 }}
+                className="w-full">
+                <img src={banner} alt="banner" className="w-full" />
+            </motion.div>
+
             <FeaturedGames gamePoster1={GTA_5} gamePoster2={GTA_online} gamePoster3={RED} gamePoster4={RED_online} />
             <LatestNews
                 gamePoster1={game_poster_1}
